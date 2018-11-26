@@ -1,7 +1,7 @@
 import * as React from "react";
 import Hello from "../Hello";
 import Grid1 from "../Grid1";
-import { Canvas } from "flow-ui-react";
+import Canvas from "../../flow-ui/Canvas"
 
 const App = () => (
   <div>
