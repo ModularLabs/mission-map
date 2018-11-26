@@ -1,6 +1,8 @@
 import React from "react";
 import { Grid } from "flow-ui-react";
 
+import data from "../../data/grid";
+
 const gridProps = {
   cellProps: {
     length: 40,
@@ -15,9 +17,9 @@ const gridProps = {
   numbering: false,
   rootCoords: [15, 25],
   data: [
+    [{}, {}, {}, {}], // row 0
     [{}, {}, {}, {}], // row 1
-    [{}, {}, {}, {}], // row 2
-    [{}, {}, {}, {}] // row 3
+    [{}, {}, {}, {}] // row 2
   ]
 };
 
