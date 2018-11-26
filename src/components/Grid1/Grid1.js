@@ -1,14 +1,14 @@
 import React from "react";
-import { Grid } from "flow-ui-react";
+import Grid from "../../flow-ui/Grid";
+import { Grid as GridFactory } from "../../factories/grid";
 
-import data from "../../data/grid";
+const data = GridFactory({ height: 10, width: 3 });
 
 const gridProps = {
   cellProps: {
     length: 40,
     color: "green"
   },
-  gridSize: [10, 20],
   dotsVisible: true,
   dotProps: {
     color: "blue",
@@ -16,11 +16,7 @@ const gridProps = {
   },
   numbering: false,
   rootCoords: [15, 25],
-  data: [
-    [{}, {}, {}, {}], // row 0
-    [{}, {}, {}, {}], // row 1
-    [{}, {}, {}, {}] // row 2
-  ]
+  data
 };
 
 const Grid1 = () => <Grid {...gridProps} />;
